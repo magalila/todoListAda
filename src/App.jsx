@@ -74,7 +74,7 @@ function App() {
                   />
                   <button
                     type="submit"
-                    className="btn bg-success p-2 text-white"
+                    className="btn bg-success p-2 text-white float"
                   >
                     Agregar
                   </button>
