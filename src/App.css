@@ -1,0 +1,99 @@
+#root {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #43035b,
+    #4d025c,
+    #57025c,
+    #60035d,
+    #69045d,
+    #750460,
+    #810562,
+    #8d0664,
+    #a00568,
+    #b4046b,
+    #c7076d,
+    #da0d6e
+  );
+}
+.flicker {
+  font-size: x-large;
+  animation-name: flicker;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: Heyam;
+  src: url(./fonts/heyam/Heyam.ttf);
+}
+@font-face {
+  font-family: billion;
+  src: url(./fonts/heyam/BillionDreams_PERSONAL.ttf);
+}
+@font-face {
+  font-family: thundergood;
+  src: url(./fonts/heyam/Thundergood.ttf);
+}
+@font-face {
+  font-family: street;
+  src: url(./fonts/heyam/StreetExplorer.otf);
+}
+@font-face {
+  font-family: mom;
+  src: url(./fonts/heyam/Mom.ttf);
+}
+
+h1 {
+  font-family: street;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.mi-footer {
+  font-family: mom;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 2s steps(40, end) infinite;
+}
+.float {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.float:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
