@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import pokemon from "./assets/image/pokemon.gif";
+import pokemonGif from "./assets/image/pokemon.gif";
 
 function App() {
   const [tasks, setTasks] = useState(() => {
@@ -135,7 +135,7 @@ function App() {
       </div>
       <footer className="m-5 pt-2 pb-2 text-light ">
         <h5 className="mi-footer">
-          <img src="/src/assets/image/pokemon.gif" alt="pokemon" />
+          <img src={pokemonGif} alt="pokemon" />
           Made by Maggie
         </h5>
       </footer>
