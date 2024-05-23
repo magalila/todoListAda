@@ -135,9 +135,8 @@ function App() {
       </div>
       <footer className="m-5 pt-2 pb-2 text-light ">
         <h5 className="mi-footer">
-          <img src="src/assets/image/pokemon.gif" alt="pokemon" />
+          <img src="/src/assets/image/pokemon.gif" alt="pokemon" />
           Made by Maggie
-          <img src="" alt="" />
         </h5>
       </footer>
     </>
